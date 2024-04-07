@@ -8,7 +8,7 @@ namespace Strategy.Infrastructure
         IQuackStrategy _quackStrategy;
         IFlyStrategy _flyStrategy;
 
-        protected Duck(IDisplayStrategy displayStrategy, IQuackStrategy quackStrategy, IFlyStrategy flyStrategy)
+        public Duck(IDisplayStrategy displayStrategy, IQuackStrategy quackStrategy, IFlyStrategy flyStrategy)
         {
             _displayStrategy = displayStrategy;
             _quackStrategy = quackStrategy;
