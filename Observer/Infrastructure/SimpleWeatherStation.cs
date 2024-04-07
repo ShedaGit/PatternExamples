@@ -2,13 +2,13 @@
 
 namespace Observer.Infrastructure
 {
-    public class WeatherStation : IObservable
+    public class SimpleWeatherStation : IObservable
     {
         readonly List<IObserver> _observers;
 
         int _temperature;
 
-        public WeatherStation()
+        public SimpleWeatherStation()
         {
             _observers = [];
         }

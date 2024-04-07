@@ -2,12 +2,12 @@
 
 namespace Observer.Infrastructure
 {
-    public class PhoneDisplay : IObserver
+    public class SimplePhoneDisplay : IObserver
     {
         readonly string _name;
-        readonly WeatherStation _station;
+        readonly SimpleWeatherStation _station;
 
-        public PhoneDisplay(string phoneName, WeatherStation station)
+        public SimplePhoneDisplay(string phoneName, SimpleWeatherStation station)
         {
             _name = phoneName;
             _station = station;
