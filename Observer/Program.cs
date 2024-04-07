@@ -29,3 +29,15 @@ reporter1.Unsubscribe();
 provider.TrackTemperature(new Temperature(25));
 provider.TrackTemperature(null!);
 provider.EndTransmission();
+
+//Example of usage for Events Implementation case
+var subject = new EventWeatherStation();
+var observer1 = new EventPhoneDisplay("E");
+var observer2 = new EventPhoneDisplay("F");
+
+subject.StateChanged += observer1.Update;
+subject.StateChanged += observer2.Update;
+
+subject.Temperature = new Temperature(23);
+subject.StateChanged -= observer1.Update;
+subject.Temperature = new Temperature(25);
