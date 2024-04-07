@@ -2,13 +2,13 @@
 
 namespace Strategy.Infrastructure
 {
-    internal abstract class DuckBase
+    internal class Duck
     {
         IDisplayStrategy _displayStrategy;
         IQuackStrategy _quackStrategy;
         IFlyStrategy _flyStrategy;
 
-        protected DuckBase(IDisplayStrategy displayStrategy, IQuackStrategy quackStrategy, IFlyStrategy flyStrategy)
+        protected Duck(IDisplayStrategy displayStrategy, IQuackStrategy quackStrategy, IFlyStrategy flyStrategy)
         {
             _displayStrategy = displayStrategy;
             _quackStrategy = quackStrategy;
