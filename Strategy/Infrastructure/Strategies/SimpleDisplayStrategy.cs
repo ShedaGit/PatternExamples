@@ -1,6 +1,6 @@
 ﻿using Strategy.Infrastructure.Interfaces;
 
-namespace Strategy.Strategies
+namespace Strategy.Infrastructure.Strategies
 {
     internal class SimpleDisplayStrategy : IDisplayStrategy
     {
