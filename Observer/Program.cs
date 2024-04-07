@@ -9,12 +9,12 @@ var phoneB = new SimplePhoneDisplay("B", weatherStationManual);
 weatherStationManual.Add(phoneA);
 weatherStationManual.Add(phoneB);
 
-weatherStationManual.SetTemperature(23);
+weatherStationManual.SetTemperature(new Temperature(23));
 weatherStationManual.Notify();
 
 weatherStationManual.Remove(phoneA);
 
-weatherStationManual.SetTemperature(25);
+weatherStationManual.SetTemperature(new Temperature(25));
 weatherStationManual.Notify();
 
 //Example of usage for System Implementation case. See https://learn.microsoft.com/en-us/dotnet/api/system.iobservable-1?view=net-8.0

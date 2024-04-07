@@ -1,6 +1,6 @@
 ﻿namespace Observer.Infrastructure
 {
-    internal class SystemWeatherStation : IObservable<Temperature>
+    public class SystemWeatherStation : IObservable<Temperature>
     {
         List<IObserver<Temperature>> _observers;
 

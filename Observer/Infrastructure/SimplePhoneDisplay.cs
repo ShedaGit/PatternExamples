@@ -18,9 +18,9 @@ namespace Observer.Infrastructure
             DisplayCurrentTemperature(_station.GetTemperature());
         }
 
-        void DisplayCurrentTemperature(int temperature)
+        void DisplayCurrentTemperature(Temperature value)
         {
-            Console.WriteLine($"Phone {_name}: current temperature is {temperature}°C.");
+            Console.WriteLine($"Phone {_name}: current temperature is {value}°C.");
         }
     }
 }

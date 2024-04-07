@@ -5,8 +5,7 @@ namespace Observer.Infrastructure
     public class SimpleWeatherStation : IObservable
     {
         readonly List<IObserver> _observers;
-
-        int _temperature;
+        Temperature _temperature = null!;
 
         public SimpleWeatherStation()
         {
@@ -29,8 +28,8 @@ namespace Observer.Infrastructure
                 observer.Update();
         }
 
-        public int GetTemperature() => _temperature;
+        public Temperature GetTemperature() => _temperature;
 
-        public void SetTemperature(int value) => _temperature = value;
+        public void SetTemperature(Temperature value) => _temperature = value;
     }
 }
